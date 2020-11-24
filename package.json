@@ -20,12 +20,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ArzuAshik/apartment-hunt-server.git"
+    "url": "git+https://github.com/Asaduzzaman607/apartment-hunt-server.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ArzuAshik/apartment-hunt-server/issues"
+    "url": "https://github.com/Asaduzzaman607/apartment-hunt-server/issues"
   },
-  "homepage": "https://github.com/ArzuAshik/apartment-hunt-server#readme"
+  "homepage": "https://github.com/Asaduzzaman607/apartment-hunt-server#readme"
 }

@@ -1,22 +1,22 @@
-# [apartment-hunt-server](https://apartment-hunt-server.herokuapp.com/)
+# [apartment-hunt-server](https://sajeeb-apartment-hunt-server.herokuapp.com/)
 
 API URL List
 | URL | TYPE | Params |
 | ---- | :----: | ------- |
-| [/apartment](https://apartment-hunt-server.herokuapp.com/apartment) | GET | - |
-| [/apartment?id="xyz"](https://apartment-hunt-server.herokuapp.com/apartment) | GET | - |
-| [/apartment](https://apartment-hunt-server.herokuapp.com/apartment) | POST | ownerEmail, title, location, bedroom, bathroom, price, img |
-| [/bookings](https://apartment-hunt-server.herokuapp.com/bookings) | POST | ownerEmail |
-| [/bookings](https://apartment-hunt-server.herokuapp.com/bookings) | PATCH | id, status |
-| [/booking-request](https://apartment-hunt-server.herokuapp.com/booking-request) | POST | name, email, phone, msg, ownerEmail, houseName, price, houseId |
-| [/my-bookings](https://apartment-hunt-server.herokuapp.com/my-bookings) | POST | email |
+| [/apartment](https://sajeeb-apartment-hunt-server.herokuapp.com/apartment) | GET | - |
+| [/apartment?id="xyz"](https://sajeeb-apartment-hunt-server.herokuapp.com/apartment) | GET | - |
+| [/apartment](https://sajeeb-apartment-hunt-server.herokuapp.com/apartment) | POST | ownerEmail, title, location, bedroom, bathroom, price, img |
+| [/bookings](https://sajeeb-apartment-hunt-server.herokuapp.com/bookings) | POST | ownerEmail |
+| [/bookings](https://sajeeb-apartment-hunt-server.herokuapp.com/bookings) | PATCH | id, status |
+| [/booking-request](https://sajeeb-apartment-hunt-server.herokuapp.com/booking-request) | POST | name, email, phone, msg, ownerEmail, houseName, price, houseId |
+| [/my-bookings](https://sajeeb-apartment-hunt-server.herokuapp.com/my-bookings) | POST | email |
 
 # Guide
 
 ## Getting list of Apartment
 
 ```javascript
-fetch("https://apartment-hunt-server.herokuapp.com/apartment")
+fetch("https://sajeeb-apartment-hunt-server.herokuapp.com/apartment")
   .then((response) => response.json())
   .then((apartments) => console.log(apartments));
 ```
@@ -43,7 +43,7 @@ fetch("https://apartment-hunt-server.herokuapp.com/apartment")
 ## Getting Single Apartment by ID
 
 ```javascript
-fetch("https://apartment-hunt-server.herokuapp.com/apartment?id="xyz")
+fetch("https://sajeeb-apartment-hunt-server.herokuapp.com/apartment?id="xyz")
   .then((response) => response.json())
   .then((apartments) => console.log(apartments));
 ```
@@ -69,7 +69,7 @@ fetch("https://apartment-hunt-server.herokuapp.com/apartment?id="xyz")
 ## Add New Apartment
 
 ```javascript
-fetch("https://apartment-hunt-server.herokuapp.com/apartment", {
+fetch("https://sajeeb-apartment-hunt-server.herokuapp.com/apartment", {
   method: "POST",
   body: JSON.stringify({
     ownerEmail: "LoggedIn User's Email",
@@ -95,7 +95,7 @@ Post API for Apartment
 ## Get List of Bookings of The House Owner
 
 ```javascript
-fetch("https://apartment-hunt-server.herokuapp.com/bookings", {
+fetch("https://sajeeb-apartment-hunt-server.herokuapp.com/bookings", {
   method: "POST",
   body: JSON.stringify({
     ownerEmail: "LoggedIn User's Email",
@@ -118,7 +118,7 @@ fetch("https://apartment-hunt-server.herokuapp.com/bookings", {
         email :"test@tt.cc"
         phone :"017xxxxxxxx"
         msg :"msg"
-        ownerEmail :"arzu2050@gmail.com"
+        ownerEmail :"asad@gmail.com"
         status :1
     },
     {...}, {...}
@@ -128,7 +128,7 @@ fetch("https://apartment-hunt-server.herokuapp.com/bookings", {
 ## Update The Status of Booking Request
 
 ```javascript
-fetch("https://apartment-hunt-server.herokuapp.com/bookings", {
+fetch("https://sajeeb-apartment-hunt-server.herokuapp.com/bookings", {
   method: "PATCH",
   body: JSON.stringify({
     id: "dfdfdadf",
@@ -145,7 +145,7 @@ fetch("https://apartment-hunt-server.herokuapp.com/bookings", {
 ## Request for a Bookings
 
 ```javascript
-fetch("https://apartment-hunt-server.herokuapp.com/booking-request", {
+fetch("https://sajeeb-apartment-hunt-server.herokuapp.com/booking-request", {
   method: "POST",
   body: JSON.stringify({
     name: "Any Name",
@@ -153,7 +153,7 @@ fetch("https://apartment-hunt-server.herokuapp.com/booking-request", {
     phone: "017xxxxxxxx",
     msg: "any message",
     ownerEmail: "email@cc.c",
-    houseName: "Arzu Vila",
+    houseName: "Asad Vila",
     price: 941,
     houseId: "5fb3639149e95300174dbbd2",
   }),
@@ -172,7 +172,7 @@ success
 ## Get List of My Bookings
 
 ```javascript
-fetch("https://apartment-hunt-server.herokuapp.com/my-bookings", {
+fetch("https://sajeeb-apartment-hunt-server.herokuapp.com/my-bookings", {
   method: "POST",
   body: JSON.stringify({
     email: "LoggedIn User's Email",
@@ -188,12 +188,12 @@ fetch("https://apartment-hunt-server.herokuapp.com/my-bookings", {
 ```
 [
   {
-    name: "AR Arzu",
+    name: "Asaduzzaman",
     email: "arzu@ar.com",
     phone: "01794xxxxxx",
     msg: "Lorem Ipsum",
-    ownerEmail: "ar@arzu.com",
-    houseName: "Arzu Vila",
+    ownerEmail: "asad@g.com",
+    houseName: "Asad Vila",
     price: "941",
     houseId: "5fb3639149e95300174dbbd2"
   },
